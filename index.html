@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+    <!-- fin firestore -->
+  </head>
+    <body>
+        <div class="container">
+            <h1>Agregar usuarios!</h1>
+            <input type="text" id="nombre" placeholder="Nombre" class="form-control my-3">
+            <input type="text" id="apellido" placeholder="Apellido" class="form-control my-3">
+            <input type="text" id="fecha" placeholder="Año de nacimiento" class="form-control my-3">
+            <button class="btn btn-info mb-5" id="boton" onclick="guardar()">Guardar</button>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Año de nacimiento</th>
+                    <th scope="col">Eliminar</th>
+                    <th scope="col">Editar</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla">
+                        <!--aqui se llaman los datos en app.js  -->
+                </tbody>
+            </table>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
